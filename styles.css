@@ -331,15 +331,25 @@ footer a{
 }
 
 @media screen and (max-width:768px){
+
   html{
     font-size: 9px;
   }
 
+  #video {
+    border-radius: 0.5rem;
+    width: 95%;
+    height:35%;
+  }
+
   .productos{
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .precios-container{
+    height: 100%;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
