@@ -69,10 +69,12 @@ body {
 }
 
 #menu {
+  cursor: pointer;
   width: 3rem;
   height: 3rem;
   display: none;
 }
+
 
 #nav-bar ul{
   list-style: none;
@@ -329,7 +331,7 @@ footer ul{
   margin: 0;
   display: flex;
   align-items: center;
-  gap:3rem;
+  gap:2rem;
 }
 
 footer a{
@@ -355,27 +357,8 @@ footer a{
     padding: 0;
   }
 
-  #menu {
-    cursor: pointer;
-    width: 4rem;
-    height: 4rem;
-    top:0;
-    display: block;
-  }
-
   #nav-bar {
-    position: absolute;
-    top:2.5rem;
-    background-color: white;
-    transition: 300ms;
-    transform: translateY(100%);
-  }
-
-  /* Fix nav-bar selector */
-
-  .nav-link{
-    font-size: 1.5rem;
-    padding: 0;
+    display: none;
   }
 
   #Como_funciona{
@@ -394,6 +377,7 @@ footer a{
   }
 
   .precios-container{
+    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
